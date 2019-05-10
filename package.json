@@ -1,0 +1,35 @@
+{
+  "name": "list2csv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BubbleBear/list2csv.git"
+  },
+  "author": {
+    "name": "雪霁",
+    "email": "vesselvatel@gmail.com",
+    "url": "https://github.com/BubbleBear"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BubbleBear/list2csv/issues"
+  },
+  "homepage": "https://github.com/BubbleBear/list2csv#readme",
+  "keywords": [
+    "csv",
+    "array-csv",
+    "array-to-csv",
+    "list-csv",
+    "list-to-csv"
+  ],
+  "devDependencies": {
+    "@types/node": "^12.0.0",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.5"
+  }
+}
