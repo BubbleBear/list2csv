@@ -11,12 +11,11 @@ export default function list2csv(list: any[], map?: object | Map<any, any>) {
 
     const header = collumns.map(v => `"${headerMap ? headerMap.get(v) : v}"`).join(',');
 
-    const content = list.reduce((acc, cur) => {
-        acc += collumns.map(key => `"${cur[key]}"`).join(',');
-        acc += '\r\n';
-
-        return acc;
-    }, '');
+    const content = list
+    .map((item) => {
+        return collumns.map(key => `"${item[key]}"`).join(',');
+    })
+    .join('\r\n');
 
     return header + '\r\n' + content;
 }
